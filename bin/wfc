@@ -1,0 +1,27 @@
+#!/usr/bin/env node
+'use strict';
+Object.defineProperty(exports, '__esModule', { value: true });
+
+const p = require('path');
+const wfc = require('../lib');
+function help(code) {
+  console.log(`Usage:
+  wfc install
+  wfc uninstall`);
+
+  process.exit(code);
+}
+const [, , cmd, ...args] = process.argv;
+const ln = args.length;
+
+const cmds = {
+  '-v': () => console.log(require(p.join(__dirname, '../package.json')).version),
+  ...wfc,
+};
+
+try {
+  cmds[cmd] ? cmds[cmd]() : help(0);
+} catch (e) {
+  console.error(e instanceof Error ? `wfc - ${e.message}` : e);
+  process.exit(1);
+}
