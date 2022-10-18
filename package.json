@@ -1,6 +1,6 @@
 {
   "name": "@ufly/wfc",
-  "version": "1.0.0-beta.0",
+  "version": "1.0.0",
   "description": "工作流，安装包后初始化：npx wfc install",
   "bin": {
     "wfc": "bin/wfc"
