@@ -1,6 +1,6 @@
 {
   "name": "@ufly/wfc",
-  "version": "0.1.1",
+  "version": "1.0.0-beta.0",
   "description": "工作流，安装包后初始化：npx wfc install",
   "bin": {
     "wfc": "bin/wfc"
@@ -51,7 +51,7 @@
   },
   "scripts": {
     "postinstall": "husky install || true",
-    "release": "(if [ -n \"$(git status -s)\" ];then\ngit add . -A\ncz\nfi) && standard-version -r patch && git push --follow-tags origin master && npm publish"
+    "release": "(if [ -n \"$(git status -s)\" ];then\ngit add . -A\ncz\nfi) && standard-version -r patch && git push --follow-tags origin master && npm publish && npx cnpm sync"
   },
   "publishConfig": {
     "access": "public",

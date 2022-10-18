@@ -6,7 +6,11 @@ module.exports = {
   // silent: false,
   logLevel: 'DEBUG',
   https,
-  hosts: ['pre.fliggy.com', 'daily.fliggy.com', 'www.fliggy.com'],
+  hosts: [
+    'pre.my.domain.com',
+    'daily.my.domain.com',
+    'my.domain.com',
+  ],
   proxy: {
     port: 8800,
   },
