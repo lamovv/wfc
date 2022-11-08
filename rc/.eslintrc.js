@@ -30,6 +30,12 @@ module.exports = {
     '@typescript-eslint/no-unsafe-call': 0,
     '@typescript-eslint/no-unsafe-return': 1,
     '@typescript-eslint/no-unsafe-argument': 1,
+    '@typescript-eslint/no-misused-promises': [
+      2,
+      {
+        checksVoidReturn: false,
+      },
+    ],
     'no-console': 1,
     'prefer-destructuring': [
       'error',

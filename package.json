@@ -1,6 +1,6 @@
 {
   "name": "@ufly/wfc",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "工作流，安装包后初始化：npx wfc install",
   "bin": {
     "wfc": "bin/wfc"
@@ -22,29 +22,28 @@
     "@commitlint/cli": "^17.2.0",
     "@commitlint/config-conventional": "^17.2.0",
     "@commitlint/cz-commitlint": "^17.2.0",
-    "@typescript-eslint/eslint-plugin": "^5.42.0",
-    "@typescript-eslint/parser": "^5.42.0",
+    "@typescript-eslint/eslint-plugin": "^5.42.1",
+    "@typescript-eslint/parser": "^5.42.1",
     "@ufly/sam": "^1.0.15",
     "commitizen": "^4.2.4",
     "cross-env": "^7.0.3",
-    "eslint": "^8.26.0",
+    "eslint": "^8.27.0",
     "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-jest": "^27.1.3",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.31.8",
     "eslint-plugin-react-hooks": "^4.5.0",
     "glob": "^8.0.3",
-    "husky": "^8.0.1",
+    "husky": "^8.0.2",
     "lint-staged": "^13.0.3",
     "postcss-less": "^6.0.0",
     "prettier": "^2.6.2",
-    "sass": "^1.54.9",
-    "stylelint": "^14.14.0",
+    "sass": "^1.56.0",
+    "stylelint": "^14.14.1",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-recess-order": "^3.0.0",
     "stylelint-config-recommended-less": "^1.0.4",
-    "stylelint-config-standard-scss": "^6.0.0",
-    "typescript": "^4.8.3"
+    "stylelint-config-standard-scss": "^6.1.0",
+    "typescript": "^4.8.4"
   },
   "devDependencies": {
     "standard-version": "^9.5.0"
