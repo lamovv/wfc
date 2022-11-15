@@ -1,4 +1,5 @@
-const sv = require('./package.json').version;
+const { resolve } = require('path');
+const sv = require(resolve(process.cwd(), 'package.json')).version;
 const av = sv.split('.');
 av[2]++;
 const v = av.slice(0, 3).join('.');
