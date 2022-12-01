@@ -17,12 +17,14 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:react/jsx-runtime', // for TS,JS不需要
     'plugin:react-hooks/recommended',
+    'plugin:jsx-a11y/recommended',
     // 'prettier/@typescript-eslint',
     'plugin:prettier/recommended',
   ],
   plugins: ['@typescript-eslint'],
   rules: {
     semi: 2,
+    'eol-last': [2, 'always'],
     'no-unused-vars': 0,
     '@typescript-eslint/no-unused-vars': [2, { args: 'none', ignoreRestSiblings: true }],
     '@typescript-eslint/no-unsafe-assignment': 0,
